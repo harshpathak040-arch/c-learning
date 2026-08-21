@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     int score;// variable declaration
     score = 100; // variable initialization
-    // const int UID = 225544; //this can not change ,because of const keyword
+    const int UID = 225544; //this can not change ,because of const keyword
 // UID = 225555; // variable reassignment (this will cause a compilation error because UID is a constant)
 
     int balance = 500; // variable declaration and initialization
