@@ -7,15 +7,15 @@
  
     int tealeaves = 70;
 
-    float waterteamperature = 99.9;
+    float waterteamperature = 99.9321;
 
-    double priceOfTea = 40.99;
+    double priceOfTea = 40.99213565656;
 
     char teaQuality = 'A';
 
     bool isTeaReady = true;
 
-    cout << isTeaReady << endl;
+    cout << priceOfTea << endl;
 
     return 0;
 
