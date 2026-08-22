@@ -11,5 +11,8 @@ int main()
 
     long largeTeapack = 1000000000;
     cout << largeTeapack << endl;
+
+    short teaSample =10;
+    cout << teaSample << endl;
     return 0;
 }
