@@ -5,20 +5,19 @@ using namespace std;
 
 int main()
 {
-    string userCar;
-    int Carmodel;
+    string userTea;
+    int TeaQuantity;
      
 
-    cout<<"What car you want to perchase?"<<endl;
-    getline(cin,userCar);
+    cout<<"What would u like to order in tea?"<<endl;
+    getline(cin,userTea);
 
-    //ask for car 
+    //ask for tea quantity
 
-    cout<<"What car You want"<<userCar<<"Whcih model do you want ?";
-    cin>>Carmodel;
+    cout<<"How many cups of "<< userTea<<" would you like to Have?"<<endl;
+    cin>>TeaQuantity;
 
-    cout<< Carmodel;
-
-    
+    cout << TeaQuantity;
+cout << userTea; 
     return 0;
 }
