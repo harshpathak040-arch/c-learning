@@ -30,7 +30,7 @@ int main(){
     TeaQuality[4]='A';
 
     cout<<"Tea Types:"<<TeaTypes<<endl;
-    
+
 
 return 0;
 

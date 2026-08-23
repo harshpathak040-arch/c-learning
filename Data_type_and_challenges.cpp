@@ -9,7 +9,7 @@
 
     float waterteamperature = 99.9321;
 
-    double priceOfTea = 40.99213565656;
+    double priceOfTea = 40.992121;
 
     char teaQuality = 'A';
 
