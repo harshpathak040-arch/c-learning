@@ -20,9 +20,16 @@ int main(){
     TeaPrice[2] = 10.25;
     TeaPrice[3] = 40.50;
     TeaPrice[4] = 30.50;
+    
 
+    char TeaQuality[5];
+    TeaQuality[0]='A';
+    TeaQuality[1]='A';
+    TeaQuality[2]='B';
+    TeaQuality[3]='C';
+    TeaQuality[4]='A';
 
-
+return 0;
 
 
 
