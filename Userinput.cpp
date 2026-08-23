@@ -18,6 +18,6 @@ int main()
     cin>>TeaQuantity;
 
     cout << TeaQuantity;
-cout << userTea; 
+    cout << userTea; 
     return 0;
 }
