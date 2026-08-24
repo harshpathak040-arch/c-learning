@@ -18,12 +18,12 @@ int main(){
     TeaNames[3] = "GreenTea";
     TeaNames[4] = "BlackTea";
 
-    // float TeaPrice[5];
-    // TeaPrice[0] = 20.5;
-    // TeaPrice[1] = 20.50;
-    // TeaPrice[2] = 10.25;
-    // TeaPrice[3] = 40.50;
-    // TeaPrice[4] = 30.50;
+    float TeaPrice[5];
+    TeaPrice[0] = 20.5;
+    TeaPrice[1] = 20.50;
+    TeaPrice[2] = 10.25;
+    TeaPrice[3] = 40.50;
+    TeaPrice[4] = 30.50;
     
 
     char TeaQuality[5];
