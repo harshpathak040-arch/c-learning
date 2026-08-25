@@ -34,7 +34,7 @@ int main(){
     string userTea;
     cout <<"These are the types of tea we have:"<< endl;
     cout << "Tea types: " << TeaTypes[0] << ", " << TeaTypes[1] << ", "
-         << TeaTypes[2] << ", " << TeaTypes[3] << ", " << TeaTypes[4] << endl;
+        //  << TeaTypes[2] << ", " << TeaTypes[3] << ", " << TeaTypes[4] << endl;
     cout<<"Please enter the tea you want to order:"<<endl;     
     getline(cin, userTea);
 
