@@ -27,7 +27,7 @@ int main(){
     TeaQuality[3]='C';
     TeaQuality[4]='A';
 
-    // cout<<"These are the types of tea we have:"<<TeaTypes
+    // cout<<"These are the types of tea we have:"<<TeaTypes<<endl;
     // cout<<"These are the prices of the teas:"<<TeaPrice<<endl;
     // cout<<"These are the qualities of the teas:"<<TeaQuality<<endl;
 
@@ -45,7 +45,7 @@ int main(){
     getline(cin, userTeaPrice);
 
     return 0;
-
+    
 
 
 
