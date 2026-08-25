@@ -42,7 +42,7 @@ int main(){
     cout<< "These are the prices of the teas:"<< endl;
     cout<< "Tea prices:"<<TeaPrice[0]<<", "<<TeaPrice[1]<<", "<<TeaPrice[2]<<", "<<TeaPrice[3]<<", "<<TeaPrice[4]<<endl;
     cout<<"This is your tea price= TeaType*TeaPrice:"<<endl;
-    getline(cin, userTeaPrice);S
+    getline(cin, userTeaPrice);
 
     return 0;
     
