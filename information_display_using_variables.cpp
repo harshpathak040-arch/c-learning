@@ -4,20 +4,14 @@ using namespace std;
 
 int main(){
 
-    int TeaTypes;
-    string UserOrder;
-    cout<<"Here are the types of tea we have:"<<endl;
-    cout<<"Tea Types:"<<TeaTypes<<endl;
-
-    getline(cin,UserOrder);
-
-    string TeaNames[5];
-    TeaNames[0] = "GingerTea";
-    TeaNames[1] = "LemonTea";
-    TeaNames[2] = "SimpleTea";
-    TeaNames[3] = "GreenTea";
-    TeaNames[4] = "BlackTea";
-
+ 
+    string TeaTypes[5]; {
+    TeaTypes[0]  = "GingerTea";
+    TeaTypes[1] = "LemonTea";
+    TeaTypes[2] = "SimpleTea";
+    TeaTypes[3] = "GreenTea";
+    TeaTypes[4] = "BlackTea";
+    }
     float TeaPrice[5];
     TeaPrice[0] = 20.5;
     TeaPrice[1] = 20.50;
@@ -33,10 +27,24 @@ int main(){
     TeaQuality[3]='C';
     TeaQuality[4]='A';
 
-    cout<<"Tea Types:"<<TeaTypes<<endl;
+    // cout<<"These are the types of tea we have:"<<TeaTypes<<endl;
+    // cout<<"These are the prices of the teas:"<<TeaPrice<<endl;
+    // cout<<"These are the qualities of the teas:"<<TeaQuality<<endl;
 
+    string userTea;
+    cout <<"These are the types of tea we have:"<< endl;
+    cout << "Tea types: " << TeaTypes[0] << ", " << TeaTypes[1] << ", "
+         << TeaTypes[2] << ", " << TeaTypes[3] << ", " << TeaTypes[4] << endl;
+    cout<<"Please enter the tea you want to order:"<<endl;     
+    getline(cin, userTea);
 
-return 0;
+    string userTeaPrice;
+    cout<< "These are the prices of the teas:"<< endl;
+    cout<< "Tea prices:"<<TeaPrice[0]<<", "<<TeaPrice[1]<<", "<<TeaPrice[2]<<", "<<TeaPrice[3]<<", "<<TeaPrice[4]<<endl;
+    cout<<"This is your tea price :"<<endl;
+    getline(cin, userTeaPrice);
+
+    return 0;
 
 
 
