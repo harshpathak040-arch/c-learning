@@ -10,7 +10,7 @@ int main( ){
     cin>> pricePerCup;
 
     TotalPrice = cups * pricePerCup;
-    //apply 5% discount if the price is above 100....
+    //apply 5% discount if the price is above 100
 
     if (TotalPrice > 100){
     
