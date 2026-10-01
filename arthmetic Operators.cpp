@@ -14,10 +14,10 @@ int main( ){
 
     if (TotalPrice > 100){
     
-        DiscountedPrice = TotalPrice -(TotalPrice*0.05);
-        cout<<"Discounted price is: "<<DiscountedPrice<<endl;
+    //     DiscountedPrice = TotalPrice -(TotalPrice*0.05);
+    //     cout<<"Discounted price is: "<<DiscountedPrice<<endl;
 
-    }
+    // }
     else{
         cout<<"Total price is "<<TotalPrice<<endl;
 
