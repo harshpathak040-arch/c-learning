@@ -22,6 +22,11 @@ else if (cups >=10 && cups <= 20){
         Discount = 0.0;
 
     }
+    //for calculating total price
+    TotalPrice -= TotalPrice*Discount;
+
+    cout<<"Total price after Discount is:"<<TotalPrice<<endl;
+
 return 0;
 }
 
