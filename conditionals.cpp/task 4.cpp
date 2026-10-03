@@ -14,6 +14,21 @@ cout <<"3. Oolong Tea\n";
 cout <<"Enter your choice in number;\n";
 cin >> choice;
 
+switch (choice){
+
+case 1:
+    price  = 2.0;
+    cout << "You have ordered Green Tea. Price:"<<price<<endl;
+    break;
+case 2:
+    price  = 3.0;
+    cout << "You have ordered Lemon Tea. Price:"<<price<<endl;
+    break;
+case 3:
+    price  = 4.0;
+    cout << "You have ordered Oolong Tea. Price:"<<price<<endl;
+    break;
+}
 
 
 return 0;
