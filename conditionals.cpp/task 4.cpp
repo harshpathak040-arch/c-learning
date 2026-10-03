@@ -28,6 +28,8 @@ case 3:
     price  = 4.0;
     cout << "You have ordered Oolong Tea. Price:"<<price<<endl;
     break;
+    default:
+    cout << "Invalid choice"<<endl;
 }
 
 
