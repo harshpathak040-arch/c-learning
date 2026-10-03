@@ -30,6 +30,7 @@ case 3:
     break;
     default:
     cout << "Invalid choice"<<endl;
+    break;
 }
 
 
