@@ -9,7 +9,7 @@ int main() {
     do {
         cout << "Do u want more tea?(Yes/No)" << endl;
         getline(cin, Response);
-    } while (Response == "No");
+    } while (Response != "No" || Response != "no");
 
     return 0;
 }
