@@ -13,9 +13,12 @@ int main() {
         if (response == "stop"){
             //now we want to break the loop so we will use the break keyword
             break;
+
         }
+        cout<< "hear is your another cup of tea"<<endl;
 
     }
+    cout << "No more tea will be served"<<endl;
 
     return 0;
 }
