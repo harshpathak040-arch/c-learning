@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    string teaTypes[5]={"Black tea","green tea","oolong tea","white tea","pu-erh tea"};
+    string teaTypes[4]={"Black tea","green tea","oolong tea","pu-erh tea"};
     
     
    
