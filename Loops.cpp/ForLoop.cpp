@@ -9,6 +9,8 @@ for ( int i= 1; i <= teaCups; i++){
     // Declaring variable and conditions
     cout << "Brewing Cup"<<i<<"of Tea"<<endl;
 } 
+cout<< "Outside of loop";
+
 return 0;
 
 }
