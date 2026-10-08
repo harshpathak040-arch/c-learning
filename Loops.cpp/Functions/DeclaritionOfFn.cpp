@@ -12,7 +12,7 @@ void serveTea(string teaType){
 }
 
 
-
+//we can comment the functions calling that we dont want to execute
 
 int main() {
     serveTea(3);
