@@ -10,8 +10,10 @@ void pourchai(int cups){
     cout <<" poured cups :"<< cups << endl;
 
 }
-int main ()
-
+int main (){
+    int chaicups = 2;
+    pourchai(chaicups);
+    cout<< "chaicups:"<< chaicups<<endl;
 
 
 return 0;
