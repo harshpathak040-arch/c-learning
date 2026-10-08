@@ -10,7 +10,7 @@ void serveTea(string teaType){
     cout<< "serving"<< teaType<<endl;
 
 }
-
+// default parameters can be used in function declaration , it is used when we dont give parameters while calling the function
 
 //we can comment the functions calling that we dont want to execute
 
