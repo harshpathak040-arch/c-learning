@@ -14,6 +14,13 @@ int main (){
     int chaicups = 2;
     pourchai(chaicups);
     cout<< "chaicups:"<< chaicups<<endl;
+    
+    //function overloading 
+    void serveChai(int cup, int price);
+
+    void serveChai(int cups);
+
+    void serveChai(string teaTypes = "Green tea")
 
 
 return 0;
