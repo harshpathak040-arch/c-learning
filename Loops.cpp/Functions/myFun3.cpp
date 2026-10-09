@@ -2,6 +2,8 @@
 using namespace std;    
 
 
+int globalStock = 100; // it can be accessed by a function if it is under the scope of the function 
+//{}this is called scope of the function of the function 
 
 void pourchai(int &cups){
     cups = cups +1;
