@@ -20,7 +20,8 @@ int main (){
 
     void serveChai(int cups);
 
-    void serveChai(string teaTypes = "Green tea"){
+    void serveChai(string teaTypes = "Green tea")
+    {
         int cups = 2;
          cout<< "serving " << teaTypes << endl;
     }
