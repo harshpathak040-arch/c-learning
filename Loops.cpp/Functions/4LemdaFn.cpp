@@ -14,7 +14,7 @@ int main(){
         cout << "preparing"<<cups<<"cups of tea"<<endl;
 
     };
-    preparedChai(2);
+    preparingChai(2);
 
     return 0;
 
