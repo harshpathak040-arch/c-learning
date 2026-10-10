@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int hello Chai(){
+int helloChai(){
     return 0;
 }
 
