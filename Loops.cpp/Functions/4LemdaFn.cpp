@@ -9,11 +9,11 @@ int helloChai(){
 
 int main(){
 
-    // lemda [](){};
-    [](int cups){
-        cout << "preparing"<<cups<<"cups of tea"<<endl;
-
+    // lambda [](){};
+    auto preparingChai = [](int cups){
+        cout << "preparing " << cups << " cups of tea" << endl;
     };
+
     preparingChai(2);
 
     return 0;
