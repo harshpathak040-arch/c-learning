@@ -1,4 +1,4 @@
-// lemda functions are anonymous functions that have no name and can be defined in place where they are used .
+// lemda functions are anonymous functions that have no name and can be defined in place where they are used ....
 
 #include <iostream>
 using namespace std;
