@@ -29,11 +29,12 @@ void displayChaiDetails(){
 };
 
 int main (){
-Chai chaiOne;
+     Chai chaiOne;
+ chaiOne.Teaname = "Green tea";
+chaiOne.servings = 2;
+chaiOne.ingredients = {"water","tea leaves","sugar","milk"};
 
-chaiOne.
-
-
+chaiOne.displayChaiDetails();
 
 }
 
