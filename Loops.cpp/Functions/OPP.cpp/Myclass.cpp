@@ -36,6 +36,14 @@ chaiOne.ingredients = {"water","tea leaves","sugar","milk"};
 
 chaiOne.displayChaiDetails();
 
+Chai chaiTwo;
+
+chaiTwo.Teaname= "Milk Tea";
+chaiTwo.servings =2;
+chaiOne.ingredients={"water,""Tea leaves","suger","Milk"};
+
+
+chaiTwo.displayChaiDetails();
 }
 
 
