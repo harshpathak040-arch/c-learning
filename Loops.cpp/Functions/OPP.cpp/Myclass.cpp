@@ -6,8 +6,9 @@
 
 using namespace std; 
 
-class chai{
+class Chai{
      //data members/attributes 
+     public: //acces modifier public means it can be accessed from anywhere in the program
 string Teaname; 
 int servings ;
 vector<string>ingredients ;// list of ingredients
@@ -28,6 +29,11 @@ void displayChaiDetails(){
 };
 
 int main (){
+Chai chaiOne;
+
+chaiOne.
+
+
 
 }
 
