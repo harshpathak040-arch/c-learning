@@ -29,13 +29,15 @@ void displayChaiDetails(){
 };
 
 int main (){
-     Chai chaiOne;
+    //first copy derived from original class that is object1 
+    Chai chaiOne;
  chaiOne.Teaname = "Green tea";
 chaiOne.servings = 2;
 chaiOne.ingredients = {"water","tea leaves","sugar","milk"};
 
 chaiOne.displayChaiDetails();
 
+//That is obeject2
 Chai chaiTwo;
 
 chaiTwo.Teaname= "Milk Tea";
