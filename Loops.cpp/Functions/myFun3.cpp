@@ -14,8 +14,13 @@ int main (){
     int chaicups = 2;
     pourchai(chaicups);
     cout<< "chaicups:"<< chaicups<<endl;
-}
+// serveChai(2, 10);
+// serveChai(2);
+// serveChai();
+
+
 return 0;
+}
     
     //function overloading - when we have same function name but different parameters  or different data types then it cause fuction overloading and we can use the same function name for different purposes
     void serveChai(int cup, int price);
