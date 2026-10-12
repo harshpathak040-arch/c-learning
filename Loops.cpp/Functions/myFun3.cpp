@@ -14,9 +14,6 @@ int main (){
     int chaicups = 2;
     pourchai(chaicups);
     cout<< "chaicups:"<< chaicups<<endl;
-// serveChai(2, 10);
-// serveChai(2);
-// serveChai();
 
 
 return 0;
