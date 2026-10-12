@@ -1,10 +1,10 @@
-# C++ Learning Journey 🚀
+# C++ Learning Journey 
 
 Welcome to my C++ Learning Repository!
 
 This repository contains my C++ practice programs, coding exercises, and learning progress as I build a strong foundation in programming.
 
-## 📚 Topics I've Learned
+##  Topics I've Learned
 
 - C++ Basics
 - Variables and Data Types
