@@ -6,4 +6,7 @@ int main (){
 
     cout<< "chai cups served on day 1:"<< chaiServed[0];
     cout<< "chai cups served on day 2:"<< chaiServed[1];
+    cout<< "chai cups served on day 3:"<< chaiServed[2];
+    cout<< "chai cups served on day 4:"<< chaiServed[3];
+    cout<< "chai cups served on day 5:"<< chaiServed[4];
 }
