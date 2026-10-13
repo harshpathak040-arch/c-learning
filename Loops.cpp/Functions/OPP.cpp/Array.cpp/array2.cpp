@@ -9,4 +9,7 @@ int main (){
     cout<< "chai cups served on day 3:"<< chaiServed[2];
     cout<< "chai cups served on day 4:"<< chaiServed[3];
     cout<< "chai cups served on day 5:"<< chaiServed[4];
+return 0;
+
 }
+
