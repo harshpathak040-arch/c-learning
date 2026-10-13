@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+
+int main (){
+    int chaiServed[5]= {50,40,45,55,65};
+
+    cout<< "chai cups served on day 1:"<< chaiServed[0];
+    cout<< "chai cups served on day 2:"<< chaiServed[1];
+}
