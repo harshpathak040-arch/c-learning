@@ -10,7 +10,7 @@ int toatalchaiServed(int chai[],int size ){
     }
     return total ;
     
-
+// this will calculate the total number of cups in 5 days 
 }
 int total (){
     int chaiServed[5]= {50,60,70,55,65};
