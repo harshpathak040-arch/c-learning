@@ -11,7 +11,8 @@ int* prepareChaiOrder(int cups){
 
 }
 int main (){
-int cups =
+int cups = 5;
+int*chaiOrder= prepareChaiOrder(cups);
 
 
 
