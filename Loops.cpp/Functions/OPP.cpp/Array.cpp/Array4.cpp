@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-//pointers are use to 
+//a pointer is a variable that stores the memory address of another variable.
 int* prepareChaiOrder(int cups){
    int* orders= new int [cups];
    for(int i=0; i<cups;i++){
@@ -17,6 +17,8 @@ int*chaiOrder= prepareChaiOrder(cups);
 for (int i = 0;i<cups;i++){
     cout<<"cups"<<i+1<<"has"<<chaiOrder[i]<<"ml\n";
 }
+
+delete[]chaiOrder;
 
     return 0;
 }
