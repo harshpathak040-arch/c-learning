@@ -14,7 +14,9 @@ int main (){
 int cups = 5;
 int*chaiOrder= prepareChaiOrder(cups);
 
-
+for (int i = o;i<cups;i++){
+    cout<<"cups"<<i+1<<"has"<<chaiOrder[i]<<"ml\n";
+}
 
     return 0;
 }
