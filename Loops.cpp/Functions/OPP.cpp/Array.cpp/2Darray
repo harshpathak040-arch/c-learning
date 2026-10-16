@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int mian() {
+int main() {
     int chaiSales[3][5] = {
         {12,20,30,25,15}, //shop 1 sales for 5 days 
         {12,20,30,25,15}, //shop 2 sales for 5 days 
@@ -11,9 +11,9 @@ int mian() {
     };
  
 for (int i= 0;i<3; i++){
-    cout<<"I am at shop: "<<i+1;
+    cout<<"I am at shop: "<<i+1<<"\n";
     for (int j= 0; j<5; j++){
-        cout<< chaiSales[i][j]<<"cups";
+        cout << chaiSales[i][j] << " cups\n";
     }
 }
 
