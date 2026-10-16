@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int mian() {
+    int chaiSales[3][5] = {
+        {12,20,30,25,15}, //shop 1 sales for 5 days 
+        {12,20,30,25,15}, //shop 2 sales for 5 days 
+        {12,20,30,25,15}, //shop 3 sales for 5 days 
+
+
+    };
+ 
+for (int i= 0;i<3; i++){
+    cout<<"I am at shop: "<<i+1;
+    for (int j= 0; j<5; j++){
+        cout<< chaiSales[i][j]<<"cups";
+    }
+}
+
+    return 0;
+
+}
