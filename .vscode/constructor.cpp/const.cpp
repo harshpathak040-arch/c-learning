@@ -1,4 +1,4 @@
-//constructor have same name as class
+//constructor have same name as class,A constructor is a special member function of a class that is automatically called when an object of the class is created. It is used to initialize the object's data members.
 
 #include<iostream>
 #include<vector>
