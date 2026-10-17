@@ -10,7 +10,7 @@ public:
     string teaName;
     int servings;
     vector<string>ingridients;
-// default constructor called A default constructor is a constructor that takes no arguments. It is automatically called when an object is created without passing any arguments. It is used to initialize an object with default values.
+// default constructor called A default constructor is a constructor ...that takes no arguments. It is automatically called when an object is created without passing any arguments. It is used to initialize an object with default values.
 
     chai(){
         teaName= "tazaTea";
