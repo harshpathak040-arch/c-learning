@@ -33,7 +33,9 @@ public:
         }
         cout << endl;
     }
-//copy constructor -
+//copy constructor -A copy constructor is a special
+// constructor that initializes a new object using an
+// existing object of the same class
     ~chai() {
         delete teaName;
         cout << "destructor called" << endl;
