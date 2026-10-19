@@ -26,7 +26,10 @@ public:
         }
         cout << endl;
     }
-    //distructor
+    //distructor - A destructor is a special member
+    //  function of a class that is automatically called 
+    //  when an object is destroyed. It is used to release
+    //   resources acquired by the object.
     ~chai(){
 delete teaName;
 cout<< "distructor called"<<endl;
