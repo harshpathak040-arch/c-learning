@@ -5,13 +5,13 @@ using namespace std;
 
 class chai {
 public:
-    string teaName;
+    string* teaName;
     int servings;
     vector<string> ingridients;
 
     // parameter constructor
     chai(string name, int serve, vector<string> ingr) {
-        teaName = name;
+        teaName = new string(name);
         servings = serve;
         ingridients = ingr;
         cout << " para constructor called" << endl;
@@ -26,6 +26,11 @@ public:
         }
         cout << endl;
     }
+    //distructor
+    ~chai(){
+delete teaName;
+cout<< "distructor called"<<endl;
+    }
 };
 
 int main() {
@@ -36,6 +41,12 @@ int main() {
     //copy the obeject
 
     chai copiedChai = lemonTea;
+    copiedChai.displayChaiDetails();
+
+    *lemonTea.teaName = "modified Lemon tea";
+    cout << "Lemon tea"<<endl;
+    lemonTea.displayChaiDetails();
+    cout << "copied Tea"<<endl;
     copiedChai.displayChaiDetails();
     return 0;
 }
