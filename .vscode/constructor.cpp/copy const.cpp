@@ -33,7 +33,7 @@ public:
         }
         cout << endl;
     }
-
+//copy constructor -
     ~chai() {
         delete teaName;
         cout << "destructor called" << endl;
