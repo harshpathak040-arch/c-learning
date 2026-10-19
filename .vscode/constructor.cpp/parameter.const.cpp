@@ -9,7 +9,10 @@ public:
     int servings;
     vector<string> ingridients;
 
-    // parameter constructor
+    // parameter constructor- it is a special member function of a 
+    // class that accepts parameters to initialize an 
+    // object with specific values at the time of its
+    //  creation
     chai(string name, int serve, vector<string> ingr) {
         teaName = new string(name);
         servings = serve;
