@@ -14,7 +14,7 @@ public:
         teaName = name;
         servings = serve;
         ingridients = ingr;
-        cout << "constructor called" << endl;
+        cout << " para constructor called" << endl;
     }
 
     void displayChaiDetails() {
@@ -30,6 +30,12 @@ public:
 
 int main() {
     chai lemonTea("lemon Tea", 2, {"water", "lemon", "honey"});
+    
     lemonTea.displayChaiDetails();
+
+    //copy the obeject
+
+    chai copiedChai = lemonTea;
+    copiedChai.displayChaiDetails();
     return 0;
 }

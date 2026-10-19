@@ -1,4 +1,7 @@
-//constructor have same name as class,A constructor is a special member function of a class that is automatically called when an object of the class is created. It is used to initialize the object's data members.
+//constructor have same name as class,A constructor
+// is a special member function of a class that is 
+//automatically called when an object of the class is created.
+// It is used to initialize the object's data members.
 
 #include<iostream>
 #include<vector>
@@ -10,7 +13,11 @@ public:
     string teaName;
     int servings;
     vector<string>ingridients;
-// default constructor called A default constructor is a constructorthat takes no arguments. It is automatically called when an object is created without passing any arguments. It is used to initialize an object with default values.
+// default constructor called A default constructor
+//  is a constructor that takes no arguments.
+//  It is automatically called when an object is created
+//  without passing any arguments. It is used to initialize 
+// an object with default values.
 
     chai(){
         teaName= "tazaTea";
