@@ -20,4 +20,18 @@ class Chai{
 
     }
 };
+int main (){
+    Chai masalaChai("Masala Chai", 4);
+    Chai gingerChai("Ginger Chai",4);
 
+    masalaChai.display();
+    gingerChai.display();
+
+    if (){
+
+    }
+    else{
+        
+    }
+    
+}
