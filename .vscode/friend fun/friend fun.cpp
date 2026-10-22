@@ -27,7 +27,7 @@ bool compareServings(const Chai & chai1,const Chai& chai2){
 }
 int main (){
     Chai masalaChai("Masala Chai", 4);
-    Chai gingerChai("Ginger Chai",4);
+    Chai gingerChai("Ginger Chai",5);
 
     masalaChai.display();
     gingerChai.display();
