@@ -13,7 +13,8 @@ class Chai{
 
     public:
     Chai(string name , int serve):teaName(name),servings(serve){}
-
+    
+    friend bool compareServings(const Chai& chai1, const Chai& chai2);
 
     void display() const{
         cout<<"teaname:"<<teaName<<endl;
