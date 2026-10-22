@@ -21,6 +21,10 @@ class Chai{
 
     }
 };
+
+bool compareServings(const Chai & chai1,const Chai& chai2){
+    return chai1.servings > chai2.servings;
+}
 int main (){
     Chai masalaChai("Masala Chai", 4);
     Chai gingerChai("Ginger Chai",4);
