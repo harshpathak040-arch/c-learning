@@ -54,6 +54,11 @@ private:
         vector<string> getingredients(){
         return ingredients;
         }
+    // setter for ingre
+
+    void setingredients(vector<string>ingre){
+        ingredients= ingre;
+    }
     
 };
 
