@@ -32,11 +32,12 @@ int main (){
     masalaChai.display();
     gingerChai.display();
 
-    if (){
-    
+    if (compareServings(masalaChai,gingerChai)){
+    cout<< "masala chai is having more servings "<<endl;
+
     }
     else{
-        
+        cout<< "masala chai is having less servings"<< endl;
     }
     
 }
