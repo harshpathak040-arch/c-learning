@@ -59,6 +59,15 @@ private:
     void setingredients(vector<string>ingre){
         ingredients= ingre;
     }
+    void .displayChaidetails(){
+        Cout<< "Tea Name:"<<teaName<<endl;
+        cout << "servings:"<< servings<< endl;
+        cout<< "Ingredients:";
+        for (string ingredient: ingredients){
+
+        }
+        cout << endl;
+    }
     
 };
 
