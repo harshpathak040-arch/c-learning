@@ -62,4 +62,7 @@ private:
     
 };
 
-int main (){}
+int main (){
+    Chai chai;
+    chai.setTeaName("ginger Tea");
+}
