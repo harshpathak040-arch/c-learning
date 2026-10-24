@@ -8,42 +8,35 @@ class bankAccount{
 
     public :
      bankAccount(string accNum, double InitialBalance){
-        accountNumber accNum;
+        accountNumber = accNum;
         Balance = InitialBalance;
      }
 
      //getter
-     
      double getBalance() const{
         return Balance;
-
-        // method to deposite money 
-
-        void deposit(double amount){
-            if (amount> 0){
-                Balance += amount;
-                cout<< "deposited:"<<amount<< endl;
-
-            }
-            else{
-                cout<< "Invalid deposite amount";
-            }
-        }
-        
-        void withdraw(double amount ){
-            if(amount>0 && amount <= Balance)
-            Balance -= amount;
-
-        }
-        else {
-            cout <<"Invalid withdraw amount"<< endl;
-
-
-        }
-
      }
 
-    
+     // method to deposite money
+     void deposit(double amount){
+        if (amount > 0){
+            Balance += amount;
+            cout << "deposited:" << amount << endl;
+        }
+        else{
+            cout << "Invalid deposite amount";
+        }
+     }
+
+     //method to withdraw money
+     void withdraw(double amount){
+        if(amount > 0 && amount <= Balance){
+            Balance -= amount;
+        }
+        else{
+            cout << "Invalid withdraw amount" << endl;
+        }
+     }
 };
 
 int main (){
