@@ -59,12 +59,12 @@ private:
     void setingredients(vector<string>ingre){
         ingredients= ingre;
     }
-    void .displayChaidetails(){
-        Cout<< "Tea Name:"<<teaName<<endl;
+    void displayChaiDetails(){
+        cout<< "Tea Name:"<<TeaName<<endl;
         cout << "servings:"<< servings<< endl;
         cout<< "Ingredients:";
         for (string ingredient: ingredients){
-
+            cout << " " << ingredient;
         }
         cout << endl;
     }
