@@ -34,4 +34,5 @@ int main (){
     Chai quickChai("Quick Chai", 1, {"water", "tea leaves"});
     quickChai.displayChaiDetails();
 
+    return 0;
 }
