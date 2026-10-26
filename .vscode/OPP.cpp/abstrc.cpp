@@ -16,3 +16,18 @@ class Tea{
         }
 };
 
+//drived class
+
+class GreenTea : public Tea{
+    public:
+        void prepareIngredients() override{
+            cout << "green leaves and water is ready "<< endl;
+}
+    void brew() override{
+    cout << "Green tea is brewed"<< endl;
+    }
+
+    void serve() override{
+        cout << " Green tea is served "<< endl;
+    }
+};
