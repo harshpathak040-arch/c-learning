@@ -47,14 +47,13 @@ class MasalaTea : public Tea{
 };
 
 
-}
 
 int main (){
     GreenTea greenTea;
     MasalaTea masalaTea;
 
     greenTea.makeTea();
-    masalaTea.makeTea; 
-    
+    masalaTea.makeTea(); 
+
     return 0;
 }
