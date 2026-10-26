@@ -31,3 +31,30 @@ class GreenTea : public Tea{
         cout << " Green tea is served "<< endl;
     }
 };
+
+class MasalaTea : public Tea{
+    public:
+        void prepareIngredients() override{
+            cout << "Masala and water is ready "<< endl;
+}
+    void brew() override{
+    cout << "masala tea is brewed"<< endl;
+    }
+
+    void serve() override{
+        cout << " masala tea is served "<< endl;
+    }
+};
+
+
+}
+
+int main (){
+    GreenTea greenTea;
+    MasalaTea masalaTea;
+
+    greenTea.makeTea();
+    masalaTea.makeTea; 
+    
+    return 0;
+}
