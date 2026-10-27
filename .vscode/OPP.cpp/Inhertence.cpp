@@ -17,5 +17,14 @@ class Tea{
         Tea(string name , int serve): teaName(name), servings(serve){
             cout << "Tea constructor called"<<teaName<< endl;
         }
-};
 
+
+        virtual  void brew() const {
+            cout << "Brewing"<<teaName<<"with generic method"<<endl;
+        }
+
+        virtual  void serve() const {
+            cout << "Serving"<<teaName<<"with generic method"<<endl;
+        }
+
+};
