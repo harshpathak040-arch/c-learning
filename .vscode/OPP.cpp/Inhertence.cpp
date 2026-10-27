@@ -27,4 +27,17 @@ class Tea{
             cout << "Serving"<<teaName<<"with generic method"<<endl;
         }
 
+        virtual ~Tea (){
+            cout<< "Tea destructor called for "<<teaName<< endl;
+
+        }
 };
+
+    class GreenTea: public Tea{
+
+        public :
+        GreenTea(int serve): Tea("Green Tea", serve){
+            cout<< "Green tea constructor called"<< endl;
+
+        }
+    };
