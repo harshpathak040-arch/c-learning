@@ -40,4 +40,32 @@ class Tea{
             cout<< "Green tea constructor called"<< endl;
 
         }
+
+        void brew () const override{
+            cout << "Brewing "<< teaName<< "By steeoing Green tea leaves"
+            <<endl;
+
+        }
+        ~GreenTea(){
+            cout<< "Green Tea constructor called"<< endl;
+
+        }
+
     };
+
+    class MasalaTea: public Tea{
+        public:
+
+            MasalaTea(int serve): Tea ("Masala Tea", serve){
+                cout << "Brewing "<< teaName<< "By adding spices , milk and tea leaves"
+            <<endl;
+
+        }
+        ~MasalaTea(){
+            cout<< "Masala Tea constructor called"<< endl;
+
+            }
+    };
+    int main (){
+        return 0;
+    }
