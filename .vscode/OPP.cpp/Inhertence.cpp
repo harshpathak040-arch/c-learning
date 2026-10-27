@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//base class or parent class 
+//base class or parent class or main class
 
 class Tea{
     protected:
@@ -18,3 +18,4 @@ class Tea{
             cout << "Tea constructor called"<<teaName<< endl;
         }
 };
+
