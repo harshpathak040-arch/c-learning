@@ -66,6 +66,26 @@ class Tea{
 
             }
     };
+        // class SpicyMasalaTea: public MasalaTea{
+        //     public:
+        //     void brew () const override{
+        //         cout<< "Brewing "<< teaName<< "with spices and milk"<< endl;
+        //     }
+        // };
+
+
+
     int main (){
+        Tea*  tea1 = new GreenTea(2);
+        Tea* tea2 = new GreenTea(3);
+
+        tea1-> brew();
+        tea1-> serve();
+        tea2-> brew();
+        tea1-> serve();
+         delete tea1;
+         delete tea2;
+         
+        
         return 0;
-    }
+    };
