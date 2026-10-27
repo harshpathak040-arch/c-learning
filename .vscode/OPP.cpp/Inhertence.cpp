@@ -37,12 +37,12 @@ class Tea{
 
         public :
         GreenTea(int serve): Tea("Green Tea", serve){
-            cout<< "Green tea constructor called"<< endl;
+            cout<< " Green tea constructor called"<< endl;
 
         }
 
-        void brew () const override{
-            cout << "Brewing "<< teaName<< "By steeoing Green tea leaves"
+        void brew () const override final {
+            cout << "Brewing "<< teaName<< "By steeping Green tea leaves"
             <<endl;
 
         }
@@ -58,6 +58,11 @@ class Tea{
 
             MasalaTea(int serve): Tea ("Masala Tea", serve){
                 cout << "Brewing "<< teaName<< "By adding spices , milk and tea leaves"
+            <<endl;
+            }
+
+             void brew () const override{
+            cout << "Brewing "<< teaName<< "By steeping Green tea leaves"
             <<endl;
 
         }
@@ -85,7 +90,7 @@ class Tea{
         tea1-> serve();
          delete tea1;
          delete tea2;
-         
+
         
         return 0;
     };
