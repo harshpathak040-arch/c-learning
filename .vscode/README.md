@@ -20,6 +20,8 @@ This repository contains my C++ practice programs, coding exercises, and learnin
 - Function Parameters and Arguments
 - References in Functions
 -construtor and destructor 
+- obejet oriented programing 
+- Abstraction and encaptulation
 
 ## Tools Used
 
