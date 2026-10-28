@@ -15,7 +15,7 @@ This repository contains my C++ practice programs, coding exercises, and learnin
 - Loops (`for`, `while`, `do-while`)
 - Nested Loops
 - `break` and `continue` Statements
-- Functions
+- Functions(lemda fn)
 - Function Declaration and Definition
 - Function Parameters and Arguments
 - References in Functions
@@ -24,6 +24,7 @@ This repository contains my C++ practice programs, coding exercises, and learnin
 - Abstraction and encaptulation
 - Inheritence using pointers and classes
 - Getter and setter
+
 
 
 ## Tools Used
