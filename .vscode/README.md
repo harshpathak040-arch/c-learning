@@ -23,6 +23,8 @@ This repository contains my C++ practice programs, coding exercises, and learnin
 - obejet oriented programing 
 - Abstraction and encaptulation
 - Inheritence using pointers and classes
+- Getter and setter
+
 
 ## Tools Used
 
