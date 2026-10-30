@@ -40,5 +40,17 @@ int main (){
         {104, "Desk Lamp", "Home"}
 
 
-    }
+    };
+
+
+    deque<string> recentCustomers ={"C001","C002","C003"};
+
+
+    recentCustomers.push_back("C004");
+    
+    recentCustomers.push_back("C005");
+
+
+
+    list<OrederHistory
 }
