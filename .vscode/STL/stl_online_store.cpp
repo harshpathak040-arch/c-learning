@@ -30,3 +30,15 @@ struct Order {
 
 
 };
+
+int main (){
+
+    vector<Product> products = {
+        {101, "Laptop","Electronics"},
+        {102, "Phoen", "Electronics"},
+        {103, "Blender","Kitchen"},
+        {104, "Desk Lamp", "Home"}
+
+
+    }
+}
