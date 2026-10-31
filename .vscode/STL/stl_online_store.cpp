@@ -59,9 +59,9 @@ int main (){
 
     set<string> categories ;
 
-    for(const auto prodecut:products){
+    for(const auto &product:products){
 
-        categories.insert (products.category);
+        categories.insert(product.category);
     }
 
     map <int , int >productStock = {
@@ -77,8 +77,13 @@ int main (){
     multimap <string, Order> customerOrders;
     for (const auto &order :orderHistory){
         customerOrders.insert({order. customerID, order});
-        
+
     }
+
+    unordered_map <string, string> customerData = {
+        {"c001","Alice"},{"c002", "Bob"},{"c003","harsh"},
+        {"c004","Max"}
+    };
 
 
     return 0;
