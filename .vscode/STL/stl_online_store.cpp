@@ -71,7 +71,13 @@ int main (){
             {103, 30},
             {104, 15},
             {105 ,10},
-        };
+        }
+    };
+
+    multimap <string, Order> customerOrders;
+    for (const auto &order :orderHistory){
+        customerOrders.insert({order. customerID, order});
+        
     }
 
 
