@@ -52,5 +52,28 @@ int main (){
 
 
 
-    list<OrederHistory
+    list<Order> orderHistory;
+    orderHistory.push_back(Order{1, 101, 1, "C001", time(0)});
+    orderHistory.push_back(Order{1, 101, 1, "C002", time(0)});
+    orderHistory.push_back(Order{1, 101, 1, "C003", time(0)});
+
+    set<string> categories ;
+
+    for(const auto prodecut:products){
+
+        categories.insert (products.category);
+    }
+
+    map <int , int >productStock = {
+        {
+            {101, 10},
+            {102, 20},
+            {103, 30},
+            {104, 15},
+            {105 ,10},
+        };
+    }
+
+
+    return 0;
 }
