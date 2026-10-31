@@ -85,6 +85,13 @@ int main (){
         {"c004","Max"}
     };
 
+    unordered_set <int> uniqueProductIDs;
+
+    for (const auto &product : products){
+        uniqueProductIDs.insert(product.productID)
+    }
+
+
 
     return 0;
 }
