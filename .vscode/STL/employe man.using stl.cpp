@@ -42,5 +42,16 @@ int main (){
 
     for_each(employees.begin(), employees.end(), displayEmployee);
 
+    vector<Employee> highEarners;
+
+    copy_if(
+    employees.begin (),
+     employees.end() ,
+      back_inserter(highEarners),
+      [](const Employee& e){
+        return e.salary>> 50000
+    });
+
+
     return 0;
 }
