@@ -34,7 +34,7 @@ int main (){
 
     sort(employees.begin(), employees.end(),[](const
          Employee& e1, const Employee& e2 ){
-        return e1.salary>salary> e2.salary;
+        return e1.salary> e2.salary;
 
     });
 
@@ -49,9 +49,17 @@ int main (){
      employees.end() ,
       back_inserter(highEarners),
       [](const Employee& e){
-        return e.salary>> 50000
+        return e.salary > 50000;
+    
     });
 
+    cout << "Employees who are high earners\n";
+    for_each(employees.begin(), employees.end(), displayEmployee);
+    
+    accumulate (employees.begin(), employees.end(),0.0,
+        [](double sum,const Employee& e){
+            
+        })
 
     return 0;
 }
