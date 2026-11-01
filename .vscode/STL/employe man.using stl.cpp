@@ -24,15 +24,23 @@ int main (){
 
     vector<Employee> employees = {
         {101, "hitesh",100000},
-        {101, "harsh",150000},
-        {101, "hridesh",160000},
-        {101, "shubham",170000},
-        {101, "aryan",180000},
-        {101, "Annu",190000},
+        {102, "harsh",150000},
+        {103, "hridesh",160000},
+        {104, "shubham",170000},
+        {105, "aryan",180000},
+        {106, "Annu",190000},
 
     };
 
-    sort(employees.begin(), employees.end())
+    sort(employees.begin(), employees.end(),[](const
+         Employee& e1, const Employee& e2 ){
+        return e1.salary>salary> e2.salary;
+
+    });
+
+    cout << "Employees stored by salary -> Highest to lowest \n";
+
+    for_each(employees.begin(), employees.end(), displayEmployee);
 
     return 0;
 }
