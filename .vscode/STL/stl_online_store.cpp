@@ -88,7 +88,7 @@ int main (){
     unordered_set <int> uniqueProductIDs;
 
     for (const auto &product : products){
-        uniqueProductIDs.insert(product.productID)
+        uniqueProductIDs.insert(product.productID);
     }
 
 
