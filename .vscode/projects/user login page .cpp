@@ -63,5 +63,33 @@ int main (){
             cin >> UserID;
             cout<< "\t\t\t PASSWORD: ";
             cin >> Password;
-       
+
+            ifstream input("records.text");
+
+            while (input >>ID>>Pass){
+               if (ID== UserID && Pass == Password)
+                {
+                    count = 1;
+                    system("cls");
+
+                }
+
+         }
+         input.close();
+
+         if (count == 1){
+            cout << UserID<<"\n Your Login is successful \n Thanks for logging in \n";
+            main ();
+
+         }
+            else {
+                cout << "n Login error \n Please enter correct details \n";
+                main ();
+
+
+            }
         }
+
+        
+       
+        
