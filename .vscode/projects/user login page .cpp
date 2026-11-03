@@ -47,8 +47,21 @@ int main (){
             default:
             system ("cls"); //it will clear the screen if user enter worng number
             cout<< "\t\t\t Please select from given options\n"<< endl;
-   
+            main ();
+            
    
         }
 
 }
+
+        void Login (){
+            int count;
+            string UserID, Password , ID, Pass;
+            system("cls");
+            cout<< "\t\t\t Please enter the username and password :"<< endl;
+            cout<< "\t\t\t USERNAME: ";
+            cin >> UserID;
+            cout<< "\t\t\t PASSWORD: ";
+            cin >> Password;
+       
+        }
