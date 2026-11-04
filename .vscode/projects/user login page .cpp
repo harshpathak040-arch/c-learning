@@ -102,7 +102,8 @@ int main (){
             ofstream f1("records.txt", ios ::app);
             f1 << rUserID<< ' '<< rPassword<< endl;
             system ("cls");
-
+            cout << "\n\t\t\t Registration is successful "\n";
+            
         }
         
        
