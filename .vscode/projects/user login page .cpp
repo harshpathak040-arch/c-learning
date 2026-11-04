@@ -59,13 +59,18 @@ int main (){
             int count;
             string UserID, Password , ID, Pass;
             system("cls"); // Clear the screen
+
+                // Ask the user to enter login credentials
+
             cout<< "\t\t\t Please enter the username and password :"<< endl;
             cout<< "\t\t\t USERNAME: ";
             cin >> UserID;
             cout<< "\t\t\t PASSWORD: ";
             cin >> Password;
 
-            ifstream input("records.text");
+             // Open the file containing registered usernames and passwords
+    ifstream input("records.txt");
+            
 
             while (input >>ID>>Pass){
                if (ID== UserID && Pass == Password)
