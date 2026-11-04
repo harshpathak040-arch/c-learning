@@ -12,6 +12,9 @@ void forgot ();
 
 int main (){
     int c;// Variable to store the user's choice
+
+        // Display welcome message and menu
+
     cout <<"\t\t\t_____________________________________________\n\n\n";
     cout <<"\t\t\t          Welcome to the login page          \n\n\n";
     cout <<"\t\t\t___________________ MENU ____________________\n\n\n";
@@ -21,6 +24,7 @@ int main (){
     cout <<"\t| Press 3 if you forgot PASSWORD |"<<endl;
     cout <<"\t| Press 4 to EXIT                |"<<endl;
 
+          // Take choice from the user
     cout <<"\n\t\t\t Please enter your choice: ";
     cin >> c;
     cout<< endl;
