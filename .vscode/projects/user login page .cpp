@@ -32,32 +32,28 @@ int main (){
     switch(c)
     {
 
-        case 1:
-            login ();
+       case 1:
+            login(); // Call login function
             break;
+
         case 2:
-            registration ();
+            registration(); // Call registration function
             break;
-            
+
         case 3:
-            forgot ();
+            forgot(); // Call forgot password function
             break;
 
-
-         case 4:
+        case 4:
             cout << "\t\t\t Thank you ! \n\n";
-            break;   
+            break;
 
-            default:
-            system ("cls"); //it will clear the screen if user enter worng number
-            cout<< "\t\t\t Please select from given options\n"<< endl;
-            main ();
-            
-   
-        }
-
+        default:
+            system("cls"); // Clear the screen if the user enters a wrong choice
+            cout << "\t\t\t Please select from given options\n" << endl;
+            main(); // Call main again to display the menu
+    }
 }
-
         void Login (){
             int count;
             string UserID, Password , ID, Pass;
