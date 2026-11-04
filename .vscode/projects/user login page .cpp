@@ -4,14 +4,14 @@
 
 using namespace std;
 
-// declarations 
+// Function declarations (prototypes)
 
 void login ();
 void registration ();
 void forgot ();
 
 int main (){
-    int c; // choice variable
+    int c;// Variable to store the user's choice
     cout <<"\t\t\t_____________________________________________\n\n\n";
     cout <<"\t\t\t          Welcome to the login page          \n\n\n";
     cout <<"\t\t\t___________________ MENU ____________________\n\n\n";
@@ -103,7 +103,7 @@ int main (){
             f1 << rUserID<< ' '<< rPassword<< endl;
             system ("cls");
             cout << "\n\t\t\t Registration is successful "\n";
-            
+
         }
         
        
