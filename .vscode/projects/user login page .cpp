@@ -54,10 +54,11 @@ int main (){
             main(); // Call main again to display the menu
     }
 }
+//login function
         void Login (){
             int count;
             string UserID, Password , ID, Pass;
-            system("cls");
+            system("cls"); // Clear the screen
             cout<< "\t\t\t Please enter the username and password :"<< endl;
             cout<< "\t\t\t USERNAME: ";
             cin >> UserID;
