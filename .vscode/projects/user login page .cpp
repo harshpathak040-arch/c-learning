@@ -144,11 +144,26 @@ int main (){
                     if (count == 1)
                     {
                     cout << "\n\n Your account is found! \n";
-                    cout << "\n\n Your password is: " << sPass;}
+                    cout << "\n\n Your password is: " << sPass;
+                    main ();
+                    }
+                    else {
+                    cout << "\n\t Sorry your account is not found\n";
+                    main();
+                    }
+                    break;
             }
 
-
-
+            case 2:
+            {
+            
+            main();
+            
+            }
+            default :
+            cout << "\t\t\t Wrong choice Please try again \n";
+            main();
+        }
         }
         
        
