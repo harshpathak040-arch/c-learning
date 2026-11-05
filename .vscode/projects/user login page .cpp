@@ -137,8 +137,14 @@ int main (){
                 {
                 if (sID == sUserID)
                 {
-                    count = 1;}
+                    count = 1;
+                    }
                 }
+                    f2.close();
+                    if (count == 1)
+                    {
+                    cout << "\n\n Your account is found! \n";
+                    cout << "\n\n Your password is: " << sPass;}
             }
 
 
