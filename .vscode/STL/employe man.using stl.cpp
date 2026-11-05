@@ -58,8 +58,13 @@ int main (){
     
     accumulate (employees.begin(), employees.end(),0.0,
         [](double sum,const Employee& e){
-            
-        })
+            return sum + e.salary;
+
+        });
+
+        double avaerageSalary = totalSalary/ employees.size();
+        max_element(employees.begin(),employees.end(),
+        [](const Employee& e2){}
 
     return 0;
 }

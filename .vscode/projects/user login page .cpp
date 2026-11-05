@@ -109,6 +109,21 @@ int main (){
             f1 << rUserID<< ' '<< rPassword<< endl;
             system ("cls");
             cout << "\n\t\t\t Registration is successful "\n";
+            main ();
+
+        }
+
+        void forgot (){
+        //when user forgets the password or username
+            int option;
+            system ("cls");
+
+            cout << "\t\t\t You forgot the password? No worries \n";
+            cout << "Press 1 to serach your id by username"<<endl;
+            cout << "Prees 2 to go back to main menu"<< endl;
+            
+
+
 
         }
         
