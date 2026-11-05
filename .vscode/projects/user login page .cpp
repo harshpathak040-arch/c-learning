@@ -121,7 +121,25 @@ int main (){
             cout << "\t\t\t You forgot the password? No worries \n";
             cout << "Press 1 to serach your id by username"<<endl;
             cout << "Prees 2 to go back to main menu"<< endl;
-            
+            cout << "\t\t\t Enter your choice: ";
+            cin >> option;
+            switch (option){
+
+                case 1:
+                {
+                int count =0; 
+                string sUserID , sID, sPass;
+                cout << "\n\t\t\t Enter the username whcih you remembered:";
+                cin>> sUserID;
+
+                ifstream f2("records.txt");
+                while (f2 >> sID>> sPass)
+                {
+                if (sID == sUserID)
+                {
+                    count = 1;}
+                }
+            }
 
 
 
