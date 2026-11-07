@@ -60,7 +60,7 @@ int main (){
             string UserID, Password , ID, Pass;
             system("cls"); // Clear the screen
 
-                // Ask the user to enter login credentials
+                // Ask the user to enter  login credentials
 
             cout<< "\t\t\t Please enter the username and password :"<< endl;
             cout<< "\t\t\t USERNAME: ";
