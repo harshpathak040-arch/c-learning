@@ -95,7 +95,7 @@ int main (){
 
             }
         }
-
+//things used for registration 
         void registration (){
 
             string rUserID, rPassword, rID, rPass;
