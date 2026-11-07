@@ -13,7 +13,7 @@ void forgot ();
 int main (){
     int c;// Variable to store the user's choice
 
-        // Display welcome message and menu
+        // Display welcome message and menu...
 
     cout <<"\t\t\t_____________________________________________\n\n\n";
     cout <<"\t\t\t          Welcome to the login page          \n\n\n";
