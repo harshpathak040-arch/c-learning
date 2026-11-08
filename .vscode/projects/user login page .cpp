@@ -13,7 +13,7 @@ void forgot ();
 int main (){
     int c;// Variable to store the user's choice
 
-        // Display welcome message and menu
+        // Display welcome message and menu...
 
     cout <<"\t\t\t_____________________________________________\n\n\n";
     cout <<"\t\t\t          Welcome to the login page          \n\n\n";
@@ -60,7 +60,7 @@ int main (){
             string UserID, Password , ID, Pass;
             system("cls"); // Clear the screen
 
-                // Ask the user to enter login credentials
+                // Ask the user to enter  login credentials
 
             cout<< "\t\t\t Please enter the username and password :"<< endl;
             cout<< "\t\t\t USERNAME: ";
@@ -95,7 +95,7 @@ int main (){
 
             }
         }
-
+//things used for registration 
         void registration (){
 
             string rUserID, rPassword, rID, rPass;
@@ -164,7 +164,7 @@ int main (){
             
             }
             default :
-            cout << "\t\t\t Wrong choice Please try again \n";
+            cout << "\t\t\t Oops,Wrong choice Please try again \n";
             main();
         }
         }
