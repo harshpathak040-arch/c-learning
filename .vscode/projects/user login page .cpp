@@ -157,7 +157,7 @@ int main (){
                     break;
             }
 
-            case 2:
+            case 2: // when user choses wrong option to go back to main menu
             {
             
             main();
