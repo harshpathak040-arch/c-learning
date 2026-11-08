@@ -108,13 +108,13 @@ int main (){
             ofstream f1("records.txt", ios ::app);
             f1 << rUserID<< ' '<< rPassword<< endl;
             system ("cls");
-            cout << "\n\t\t\t Registration is successful "\n";
+            cout << "\n\t\t\t Registration is successful \n";
             main ();
 
         }
 
         void forgot (){
-        //when user forgets the password or username
+        //when user forgets the password or username......
             int option;
             system ("cls");
 
