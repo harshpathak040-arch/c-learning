@@ -100,14 +100,17 @@ int main (){
 
             string rUserID, rPassword, rID, rPass;
             system ("cls");
+
             cout << "\t\t\t Enter the 'username :"<< endl;
             cin>> rUserID;
+
             cout << "\t\t\t Enter the password:"<< endl;
             cin >> rPassword;
 
             ofstream f1("records.txt", ios ::app);
             f1 << rUserID<< ' '<< rPassword<< endl;
             system ("cls");
+            
             cout << "\n\t\t\t Registration is successful \n";
             main ();
 
