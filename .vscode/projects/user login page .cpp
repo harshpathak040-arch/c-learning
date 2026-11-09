@@ -167,6 +167,9 @@ int main (){
             cout << "\t\t\t Oops,Wrong choice Please try again \n";
             main();
         }
+        defalut :
+            cout << "\t\t\t worng choice, please try again "<< endl;
+            forgot ();
         }
         
        
