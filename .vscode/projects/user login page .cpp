@@ -90,7 +90,7 @@ int main (){
 
          }
             else {
-                cout << "n Login error \n Please enter correct details \n";
+                cout << "\n Login error \n Please enter correct details \n";
                 main ();
 
 
@@ -109,7 +109,8 @@ int main (){
             cin >> rPassword;
 
             ofstream f1("records.txt", ios ::app);
-            f1 << rUserID<< ' '<< rPassword<< endl;
+            f1 << rUserID << ' '<< rPassword<< endl;
+            f1.close();
             system ("cls");
             
             cout << "\n\t\t\t Registration is successful \n";
