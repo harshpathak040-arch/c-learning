@@ -55,8 +55,8 @@ int main (){
     }
 }
 //login function
-        void Login (){
-            int count;
+        void login (){
+            int count = 0;
             string UserID, Password , ID, Pass;
             system("cls"); // Clear the screen
 
@@ -69,14 +69,15 @@ int main (){
             cin >> Password;
 
              // Open the file containing registered usernames and passwords
-    ifstream input("records.txt");
+            ifstream input("records.txt");
             
 
             while (input >>ID>>Pass){
                if (ID== UserID && Pass == Password)
                 {
                     count = 1;
-                    system("cls");
+                    break;
+                
 
                 }
 
