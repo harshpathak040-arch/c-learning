@@ -99,4 +99,35 @@ void shopping :: administrator()
     cout << "\n\t\t\t|                              |";
     cout << "\n\t\t\t|______4) Go back to main menu_|";
     
-   
+    cout <<"\n\t\t\t Please enter your choice";
+    cin >> choice;
+
+    switch (choice)
+    {
+        case 1:
+        add ();
+        break;
+
+        case 2:
+        edit ();
+        break;
+
+        case 3:
+        rem ();
+        break;
+
+        case 4:
+        menu();
+        break;
+
+
+        default:
+        cout << "\t\t\t Invalid choice!";
+
+    }
+    goto m;
+
+
+}
+
+void shopping :: buyer()
