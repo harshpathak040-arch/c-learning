@@ -146,20 +146,20 @@ void shopping :: buyer()
 
     switch (choice)
     {
-        case 1:
-            receipt();
-            break;
+//         case 1:
+//             receipt();
+//             break;
 
-        case 2:
-            menu();
-            break;
+//         case 2:
+//             menu();
+//             break;
 
-        default:
-            cout << "\t\t\t\t Invalid choice!";
-            break;
-    }
-    goto m;
+//         default:
+//             cout << "\t\t\t\t Invalid choice!";
+//             break;
+//     }
+//     goto m;
 
-}
+// }
 
-void sh
+// void sh
