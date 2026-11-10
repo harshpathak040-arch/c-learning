@@ -131,3 +131,35 @@ void shopping :: administrator()
 }
 
 void shopping :: buyer()
+{
+    m:
+    int choice;
+    cout << "\t\t\t  Buyer \n";
+    cout << "              \n";
+    cout << "\t\t\t 1) Buy product \n";
+    cout << "              \n";
+    cout << "\t\t\t 2) Go back to main menu \n";
+    cout << "              \n";
+    cout << "\t\t\t Please enter your choice";
+
+    cin >> choice;
+
+    switch (choice)
+    {
+        case 1:
+            receipt();
+            break;
+
+        case 2:
+            menu();
+            break;
+
+        default:
+            cout << "\t\t\t\t Invalid choice!";
+            break;
+    }
+    goto m;
+
+}
+
+void sh
