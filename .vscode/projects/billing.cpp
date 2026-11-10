@@ -86,26 +86,17 @@ void shopping :: menu()
     goto m;
 }
 
-// void shopping :: administrator()
-// {
-//     int choice;
-//     cout << "\n\n\n\t\t\t Administrator menu";
-//     cout << "\n\t\t\t|______1) Add the product______|";
-//     cout << "\n\t\t\t|                              |";
-//     cout << "\n\t\t\t|______2) Modify the product___|";
-// //     cout << "\n\t\t\t|                              |";
-// //     cout << "\n\t\t\t|______3) Delete the product___|"; 
-// //     cout << "\n\t\t\t|                              |";
-// //     cout << "\n\t\t\t|______4) Go back to main menu_|";
+void shopping :: administrator()
+{
+    m:
+    int choice;
+    cout << "\n\n\n\t\t\t Administrator menu";
+    cout << "\n\t\t\t|______1) Add the product______|";
+    cout << "\n\t\t\t|                              |";
+    cout << "\n\t\t\t|______2) Modify the product___|";
+    cout << "\n\t\t\t|                              |";
+    cout << "\n\t\t\t|______3) Delete the product___|"; 
+    cout << "\n\t\t\t|                              |";
+    cout << "\n\t\t\t|______4) Go back to main menu_|";
     
-// //     cout <<"\n\t\t\t Please enter your choice";
-// //     cin >> choice;
-
-// //     switch (choice)
-// //     {
-// //         case 1;
-// //         add ();
-// //     }
-
-
-// // }
+   
