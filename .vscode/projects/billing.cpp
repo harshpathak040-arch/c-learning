@@ -178,6 +178,15 @@ void shopping :: add()
     cin >> pname;
     cout << "\n\n\t Price of the product";
     cin >> price;
-    cout << ""
+    cout << "\n\n\t Discount on product";
+    cin >>dis;
+
+    data .open("database.txt", ios::in);
+    if (!data)
+    {
+        data.open("database.txt", ios::app| ios::out);
+        data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
+        data.close();
+    }
 
 }
