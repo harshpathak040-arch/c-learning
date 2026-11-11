@@ -188,5 +188,17 @@ void shopping :: add()
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
         data.close();
     }
+else 
+{
+    data >> c >> n >> p >> d;
 
+    while(!data.eof()) // initializing the data from the file to check if the product code already exists
+    {
+        if (c == pcode)
+        {
+            token++;
+        }
+        data>>c>>n>>p>>d;
+    }
+}
 }
