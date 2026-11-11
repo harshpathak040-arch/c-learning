@@ -230,4 +230,16 @@ void shopping :: edit()
 
     cout << "\n\t\t\t Modify the record";
     cout << "\n\t\t\t Product code :";
+    cin >> pkey;
+
+    data.open("database.txt", ios::in);
+    if (!data)
+    {
+        data1.open("database1.txt", ios::app| ios ::out);
+        data >>pcode>>pname>>price>>dis;
+        while(!data.eof())
+        {
+            if 
+        }
+    }
 }
