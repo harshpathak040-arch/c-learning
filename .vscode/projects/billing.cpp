@@ -164,6 +164,7 @@ void shopping :: buyer()
 
 void shopping :: add()
 {
+    m:
     fstream data;
     int c;
     int token =0;
@@ -200,5 +201,20 @@ else
         }
         data>>c>>n>>p>>d;
     }
+    data.close();
+
 }
+
+if (token== 1)
+goto m;
+
+else{
+    data.open("database.txt", ios::app| ios::out);
+        data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
+        data.close();
+    }
+    cout<<"\n\n\t\t Record inserted !";
+    goto m;
+    
+
 }
