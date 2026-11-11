@@ -239,7 +239,16 @@ void shopping :: edit()
         data >>pcode>>pname>>price>>dis;
         while(!data.eof())
         {
-            if 
+            if (pkey == pcode)
+            {
+                cout << "\n\t\t product of new code:";
+                cin >>c;
+                cout<<"\n\t\t Name of the product:";
+                cin >>n;
+                cout << "\n\t\t Price:";
+                cin>> p;
+                
+            }
         }
     }
 }
