@@ -146,20 +146,38 @@ void shopping :: buyer()
 
     switch (choice)
     {
-//         case 1:
-//             receipt();
-//             break;
+        case 1:
+            receipt();
+            break;
 
-//         case 2:
-//             menu();
-//             break;
+        case 2:
+            menu();
+            break;
 
-//         default:
-//             cout << "\t\t\t\t Invalid choice!";
-//             break;
-//     }
-//     goto m;
+        default:
+            cout << "\t\t\t\t Invalid choice!";
+            break;
+    }
+    goto m;
 
-// }
+}
 
-// void sh
+void shopping :: add()
+{
+    fstream data;
+    int c;
+    int token =0;
+    float p;
+    float d;
+    string n;
+
+    cout <<"\n\t\t\t Add new product";
+    cout << "\n\t\t\t Product code of the product";
+    cin >> pcode;
+    cout << "\n\t\t\t Name of the product";
+    cin >> pname;
+    cout << "\n\n\t Price of the product";
+    cin >> price;
+    cout << ""
+
+}
