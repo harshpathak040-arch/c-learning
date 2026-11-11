@@ -213,8 +213,21 @@ else{
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
         data.close();
     }
+
     cout<<"\n\n\t\t Record inserted !";
     goto m;
-    
 
+}
+void shopping :: edit()
+{
+    fstream data, data1;
+    int pkey;
+    int token = 0;
+    int c;
+    float p;
+    float d;
+    string n;
+
+    cout << "\n\t\t\t Modify the record";
+    cout << "\n\t\t\t Product code :";
 }
