@@ -253,6 +253,34 @@ void shopping :: edit()
                 cout << "\n\n\t\t Record edited";
                 token++;
             }
+            else
+            {
+                data1 <<" "<<pcode<<" "<<pname<<" "<<price<< " "<<dis<<"\n";
+            }
+            data>>pcode>>pname>>price>>dis;
         }
+        data.close();
+        data1.close();
+
+        remove("database.txt");
+        rename("database1.txt", "database.txt");
+
+        if(token==0)
+        {
+            cout <<"\n\n Record not found sorry!";
+
+        }
+
+
     }
 }
+    void shopping::rem()
+    {
+        fstream data,data1;
+        int pkey;
+        int token=0;
+        cout <<"\n\n\t Delete product";
+        cout<<"\n\n\t product code:";
+        cin >>pkey;
+        data.open("database.txt")
+    }
