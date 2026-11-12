@@ -282,5 +282,21 @@ void shopping :: edit()
         cout <<"\n\n\t Delete product";
         cout<<"\n\n\t product code:";
         cin >>pkey;
-        data.open("database.txt")
+        data.open("database.txt",ios::in);
+        if (!data)
+        {
+            cout<<"file doesnt exist";
+
+        }
+        else{
+            data1.open("database1.txt",ios::app|ios::out);
+            data>>pcode>>pname>>price>>dis;
+            while(!data.eof())
+            {
+                if(pcode==pkey)
+                {
+                    cout<<""
+                }
+            }
+        }
     }
