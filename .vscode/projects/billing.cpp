@@ -274,13 +274,13 @@ void shopping :: edit()
 
     }
 }
-    // void shopping::rem()
-    // {
-    //     fstream data,data1;
-    //     int pkey;
-    //     int token=0;
-    //     cout <<"\n\n\t Delete product";
-    //     cout<<"\n\n\t product code:";
-    //     cin >>pkey;
-    //     data.open("database.txt")
-    // }
+    void shopping::rem()
+    {
+        fstream data,data1;
+        int pkey;
+        int token=0;
+        cout <<"\n\n\t Delete product";
+        cout<<"\n\n\t product code:";
+        cin >>pkey;
+        data.open("database.txt")
+    }
