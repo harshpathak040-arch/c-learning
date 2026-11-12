@@ -295,7 +295,13 @@ void shopping :: edit()
             {
                 if(pcode==pkey)
                 {
-                    cout<<""
+                    cout<<"\n\n\t product deleted succesfully";
+                    
+                    token++;
+                }
+                else
+                {
+                    data1<<" "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
                 }
             }
         }
