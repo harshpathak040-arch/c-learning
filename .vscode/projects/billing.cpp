@@ -46,22 +46,31 @@ void shopping :: menu()
     cout << "\t\t\t\t Please select!";
     cin >> choice;
 
-    switch (choice)
-    {
-        case 1:
+   switch (choice)
+{
+    case 1:
+        // Ask the administrator to enter login details
         cout << "\t\t\t Please login \n";
+
+        // Take email from the user
         cout << "\t\t\t Enter Email \n";
         cin >> email;
+
+        // Take password from the user
         cout << "\t\t\t Password \n";
         cin >> password;
 
-        if (email =="harsh@email.com" && password == "Harsh@123")
+        // Check whether the entered email and password are correct
+        if (email == "harsh@email.com" && password == "Harsh@123")
         {
-            administrator ();
-
+            // If login details are correct, open administrator panel
+            administrator();
         }
         else
         {
+            // If login details are incorrect
+            // display an error message here
+        
             cout << "\t\t\t Invalid email or password";
 
         }
