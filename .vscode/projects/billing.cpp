@@ -85,6 +85,7 @@ case 2:
         case 3:
         {
             exit(0);
+             // Exit the program when user selects option 3
         }
         default:
         {
