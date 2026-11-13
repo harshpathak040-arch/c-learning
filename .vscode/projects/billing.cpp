@@ -76,9 +76,9 @@ void shopping :: menu()
         }
         break;
 
-        case 2:
+case 2:
         {
-            buyer();
+            buyer();  // Call the buyer function when user selects option 2
     
         }
 
@@ -89,7 +89,7 @@ void shopping :: menu()
         default:
         {
             cout << "Please select from given options";
-        }
+        }        
     
     }
     goto m;
