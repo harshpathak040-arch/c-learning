@@ -331,16 +331,34 @@ void shopping :: edit()
     }
     void shopping ::list()
     {
-        fstream data:
+        fstream data;
         data.open("database.txt",ios::in);
         cout<<"\n\n|_________________________________________\n";
         cout<<"ProNo\t\tName\t\tPrice\n";
         cout<<"\n\n|_________________________________________\n";
-        data>>pcode>.pname>>price>>dis;
+        data>>pcode>>pname>>price>>dis;
         while(!data.eof())
         {
-            cout<<
+            cout<<pcode<<"\t\t"<<pname<<"\t\t"<<price<<"\n";
+            data>>pcode>>pname>>price>>dis;
+
         }
 
+        data.close();
 
+
+    }
+    void shopping::receipt()
+    {
+        fstream data;
+
+        int arrc[100];
+        int arrq[100];
+        char choice;
+
+        int c=0;
+
+        float amount=0;
+        float dis=0;
+        float total=0;
     }
