@@ -352,13 +352,13 @@ void shopping :: edit()
     {
         fstream data;
 
-        int arrc[100];
-        int arrq[100];
-        char choice;
+    //     int arrc[100];
+    //     int arrq[100];
+    //     char choice;
 
-        int c=0;
+    //     int c=0;
 
-        float amount=0;
-        float dis=0;
-        float total=0;
-    }
+    //     float amount=0;
+    //     float dis=0;
+    //     float total=0;
+    // }
