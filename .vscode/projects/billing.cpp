@@ -361,4 +361,30 @@ void shopping :: edit()
         float amount=0;
         float dis=0;
         float total=0;
+
+        cout<<"\n\n\t\t\t RECIEPT";
+            data.open("database.txt",ios::in);
+            if(!data)
+            {
+                cout<<"\n\n Empty database";
+
+            }
+            else{
+                data.close();
+                list();
+                cout<<"\n__________________________________\n";
+                cout<<"\n                                  \n";
+                cout<<"\n     please place the order       \n";
+                cout<<"\n                                  \n";
+                cout<<"\n__________________________________\n";
+
+                do
+                {
+                    cout<<"\n\n Enter product code :";
+                    cin>>arrc[c];
+                
+            }
     }
+
+
+    
