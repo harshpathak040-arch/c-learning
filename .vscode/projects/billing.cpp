@@ -372,16 +372,16 @@ void shopping :: edit()
             else{
                 data.close();
                 list();
-                cout<<"\n__________________________________\n";
-                cout<<"\n                                  \n";
-                cout<<"\n     please place the order       \n";
-                cout<<"\n                                  \n";
-                cout<<"\n__________________________________\n";
+                // cout<<"\n__________________________________\n";
+                // cout<<"\n                                  \n";
+                // cout<<"\n     please place the order       \n";
+                // cout<<"\n                                  \n";
+                // cout<<"\n__________________________________\n";
 
-                do
-                {
-                    cout<<"\n\n Enter product code :";
-                    cin>>arrc[c];
+                // do
+                // {
+                //     cout<<"\n\n Enter product code :";
+                //     cin>>arrc[c];
                 
             }
     }
