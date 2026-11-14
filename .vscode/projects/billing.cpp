@@ -312,7 +312,35 @@ void shopping :: edit()
                 else
                 {
                     data1<<" "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
+
                 }
+                data>>pcode>>pname>>price>>dis;
+
+            }
+            data.close();
+            data1.close();
+            remove("database.txt");
+            rename("database1.txt","database.txt");
+
+            if (token==0)
+            {
+                cout<<"\n\n Record not found";
+
             }
         }
+    }
+    void shopping ::list()
+    {
+        fstream data:
+        data.open("database.txt",ios::in);
+        cout<<"\n\n|_________________________________________\n";
+        cout<<"ProNo\t\tName\t\tPrice\n";
+        cout<<"\n\n|_________________________________________\n";
+        data>>pcode>.pname>>price>>dis;
+        while(!data.eof())
+        {
+            cout<<
+        }
+
+
     }
