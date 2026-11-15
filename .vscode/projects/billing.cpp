@@ -172,14 +172,15 @@ void shopping::buyer()
     switch (choice)
     {
         case 1:
+        // Call receipt() function to generate the purchase receipt
             receipt();
             break;
 
-        case 2:
+        case 2:   // Go back to the main menu
             menu();
             break;
 
-        default:
+        default:// Display an error message for an invalid choice
             cout << "\t\t\t\t Invalid choice!";
             break;
     }
