@@ -112,31 +112,35 @@ void shopping :: administrator()
     cout <<"\n\t\t\t Please enter your choice";
     cin >> choice;
 
-    switch (choice)
-    {
-        case 1:
-        add ();
+   switch (choice)
+{
+    case 1:
+        // Call add() function to add a new record
+        add();
         break;
 
-        case 2:
-        edit ();
+    case 2:
+        // Call edit() function to edit an existing record
+        edit();
         break;
 
-        case 3:
-        rem ();
+    case 3:
+        // Call rem() function to remove a record
+        rem();
         break;
 
-        case 4:
+    case 4:
+        // Return to the main menu
         menu();
         break;
 
-
-        default:
+    default:
+        // Display an error message for an invalid choice
         cout << "\t\t\t Invalid choice!";
+}
 
-    }
-    goto m;
-
+// Return to the menu using the goto label 'm'
+goto m;
 
 }
 
