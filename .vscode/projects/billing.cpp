@@ -248,19 +248,22 @@ else
 
     while(!data.eof()) // initializing the data from the file to check if the product code already exists
     {
-        if (c == pcode)
-        {
-            token++;
-        }
-        data>>c>>n>>p>>d;
-    }
-    data.close();
-
+     if (c == pcode)
+{
+    // Increase token if the entered product code already exists
+    token++;
 }
 
-if (token== 1)
-goto m;
+// Read the next product details from the database
+data >> c >> n >> p >> d;
+}
 
+// Close the database file
+data.close();
+
+// If the product code already exists, return to the add product section
+if (token == 1)
+    goto m;
 else{
     data.open("database.txt", ios::app| ios::out);
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
