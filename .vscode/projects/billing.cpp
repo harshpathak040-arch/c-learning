@@ -144,18 +144,29 @@ goto m;
 
 }
 
-void shopping :: buyer()
+void shopping::buyer()
 {
+    // Label used to return to the buyer menu
     m:
-    int choice;
+
+    int choice; // Variable to store the buyer's choice
+
+    // Display the buyer menu
     cout << "\t\t\t  Buyer \n";
     cout << "              \n";
+
+    // Option to buy a product
     cout << "\t\t\t 1) Buy product \n";
     cout << "              \n";
+
+    // Option to return to the main menu
     cout << "\t\t\t 2) Go back to main menu \n";
     cout << "              \n";
+
+    // Ask the buyer to enter their choice
     cout << "\t\t\t Please enter your choice";
 
+    // Take the choice from the buyer
     cin >> choice;
 
     switch (choice)
