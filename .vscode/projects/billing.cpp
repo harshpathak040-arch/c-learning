@@ -188,12 +188,10 @@ void shopping::buyer()
 
 }
 
-void shopping::add()
+void shopping :: add()
 {
-    // Label used to return to the add product section
     m:
-
-    fstream data;      // File stream object used to work with files
+     fstream data;      // File stream object used to work with files
 
     int c;              // Variable to store user's choice
     int token = 0;      // Used to check whether product already exists
@@ -219,51 +217,35 @@ void shopping::add()
     cin >> price;
 
     // Ask user to enter the discount on the product
+    cout << "\n\n\t Discount on product";
+    cin >> dis;
 
-  cout << "\n\n\t Discount on product";
-
-// Take discount value from the user
-cin >> dis;
-
-// Open the database file in read mode
-data.open("database.txt", ios::in);
-
-if (!data)
+    data .open("database.txt", ios::in);
+    if (!data)
+    {
+        data.open("database.txt", ios::app| ios::out);
+        data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
+        data.close();
+    }
+else 
 {
-    // If the file does not exist, create it
-    // and open it in append and output mode
-    data.open("database.txt", ios::app | ios::out);
-
-    // Store product details in the database file
-    data << " " << pcode << " " << pname << " "
-         << price << " " << dis << "\n";
-
-    // Close the database file
-    data.close();
-}
-else
-{
-    // Read existing product details from the database
     data >> c >> n >> p >> d;
 
     while(!data.eof()) // initializing the data from the file to check if the product code already exists
     {
-     if (c == pcode)
-{
-    // Increase token if the entered product code already exists
-    token++;
+        if (c == pcode)
+        {
+            token++;
+        }
+        data>>c>>n>>p>>d;
+    }
+    data.close();
+
 }
 
-// Read the next product details from the database
-data >> c >> n >> p >> d;
-}
+if (token== 1)
+goto m;
 
-// Close the database file
-data.close();
-
-// If the product code already exists, return to the add product section
-if (token == 1)
-    goto m;
 else{
     data.open("database.txt", ios::app| ios::out);
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
