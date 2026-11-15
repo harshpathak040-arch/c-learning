@@ -188,26 +188,39 @@ void shopping::buyer()
 
 }
 
-void shopping :: add()
+void shopping::add()
 {
+    // Label used to return to the add product section
     m:
-    fstream data;
-    int c;
-    int token =0;
-    float p;
-    float d;
-    string n;
 
-    cout <<"\n\t\t\t Add new product";
+    fstream data;      // File stream object used to work with files
+
+    int c;              // Variable to store user's choice
+    int token = 0;      // Used to check whether product already exists
+
+    float p;            // Variable to store product price
+    float d;            // Variable to store product discount
+
+    string n;           // Variable to store product name
+
+    // Display heading for adding a new product
+    cout << "\n\t\t\t Add new product";
+
+    // Ask user to enter the product code
     cout << "\n\t\t\t Product code of the product";
     cin >> pcode;
+
+    // Ask user to enter the product name
     cout << "\n\t\t\t Name of the product";
     cin >> pname;
+
+    // Ask user to enter the product price
     cout << "\n\n\t Price of the product";
     cin >> price;
-    cout << "\n\n\t Discount on product";
-    cin >>dis;
 
+    // Ask user to enter the discount on the product
+    cout << "\n\n\t Discount on product";
+    cin >> dis;
     data .open("database.txt", ios::in);
     if (!data)
     {
