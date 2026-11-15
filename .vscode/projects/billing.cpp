@@ -219,17 +219,31 @@ void shopping::add()
     cin >> price;
 
     // Ask user to enter the discount on the product
-    cout << "\n\n\t Discount on product";
-    cin >> dis;
-    data .open("database.txt", ios::in);
-    if (!data)
-    {
-        data.open("database.txt", ios::app| ios::out);
-        data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
-        data.close();
-    }
-else 
+
+  cout << "\n\n\t Discount on product";
+
+// Take discount value from the user
+cin >> dis;
+
+// Open the database file in read mode
+data.open("database.txt", ios::in);
+
+if (!data)
 {
+    // If the file does not exist, create it
+    // and open it in append and output mode
+    data.open("database.txt", ios::app | ios::out);
+
+    // Store product details in the database file
+    data << " " << pcode << " " << pname << " "
+         << price << " " << dis << "\n";
+
+    // Close the database file
+    data.close();
+}
+else
+{
+    // Read existing product details from the database
     data >> c >> n >> p >> d;
 
     while(!data.eof()) // initializing the data from the file to check if the product code already exists
