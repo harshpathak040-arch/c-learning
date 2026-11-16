@@ -260,14 +260,26 @@ else{
 
 }
 void shopping :: edit()
-{
-    fstream data, data1;
-    int pkey;
-    int token = 0;
-    int c;
-    float p;
-    float d;
-    string n;
+{// Create two file stream objects for reading and writing data
+fstream data, data1;
+
+// Variable to store the product key/code
+int pkey;
+
+// Used to count matching records
+int token = 0;
+
+// Variable to store the user's choice
+int c;
+
+// Variable to store the product price
+float p;
+
+// Variable to store the product discount
+float d;
+
+// Variable to store the product name
+string n;
 
     cout << "\n\t\t\t Modify the record";
     cout << "\n\t\t\t Product code :";
