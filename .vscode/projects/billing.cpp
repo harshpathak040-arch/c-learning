@@ -249,24 +249,14 @@ data.close();
 if (token== 1)
 goto m;
 
-else
-{
-    // Open the database file in append and output mode
-    data.open("database.txt", ios::app | ios::out);
+else{
+    data.open("database.txt", ios::app| ios::out);
+        data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
+        data.close();
+    }
 
-    // Store the new product details in the database
-    data << " " << pcode << " " << pname << " "
-         << price << " " << dis << "\n";
-
-    // Close the database file
-    data.close();
-}
-
-// Display a message after successfully inserting the record
-cout << "\n\n\t\t Record inserted !";
-
-// Return to the add product section
-goto m;
+    cout<<"\n\n\t\t Record inserted !";
+    goto m;
 
 }
 void shopping :: edit()
