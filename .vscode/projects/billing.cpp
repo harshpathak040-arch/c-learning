@@ -233,15 +233,18 @@ else
 
     while(!data.eof()) // initializing the data from the file to check if the product code already exists
     {
-        if (c == pcode)
-        {
-            token++;
-        }
-        data>>c>>n>>p>>d;
-    }
-    data.close();
-
+      if (c == pcode)
+{
+    // Increase token when the entered product code matches an existing product code
+    token++;
 }
+
+// Read the next product's details from the database
+data >> c >> n >> p >> d;
+}
+
+// Close the database file
+data.close();
 
 if (token== 1)
 goto m;
