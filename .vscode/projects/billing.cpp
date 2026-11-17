@@ -419,7 +419,15 @@ void shopping :: edit()
                 cout<<"\n\n\t\t\t______________RECEIPT________________\n";
                 cout<<"\nProduct No\t prodcut Name\t product quantity\tprice\tAmount\tAmount with discount\n";
 
-                for(int i=0;)
+                for(int i=0;i<c;i++)
+                {
+                    data.open("database.txt",ios::in);
+                    data>>pcode>>pname>>price>>dis;
+                    while(!data.eof())
+                    {
+                        if(pcode==arrc[i])
+                    }
+                }
                 
             }
     }
