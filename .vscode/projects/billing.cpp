@@ -180,7 +180,7 @@ void shopping::buyer()
             menu();
             break;
 
-        default:// Display an error message for an invalid choice
+        default:
             cout << "\t\t\t\t Invalid choice!";
             break;
     }
@@ -191,34 +191,22 @@ void shopping::buyer()
 void shopping :: add()
 {
     m:
-     fstream data;      // File stream object used to work with files
+    fstream data;
+    int c;
+    int token =0;
+    float p;
+    float d;
+    string n;
 
-    int c;              // Variable to store user's choice
-    int token = 0;      // Used to check whether product already exists
-
-    float p;            // Variable to store product price
-    float d;            // Variable to store product discount
-
-    string n;           // Variable to store product name
-
-    // Display heading for adding a new product
-    cout << "\n\t\t\t Add new product";
-
-    // Ask user to enter the product code
+    cout <<"\n\t\t\t Add new product";
     cout << "\n\t\t\t Product code of the product";
     cin >> pcode;
-
-    // Ask user to enter the product name
     cout << "\n\t\t\t Name of the product";
     cin >> pname;
-
-    // Ask user to enter the product price
     cout << "\n\n\t Price of the product";
     cin >> price;
-
-    // Ask user to enter the discount on the product
     cout << "\n\n\t Discount on product";
-    cin >> dis;
+    cin >>dis;
 
     data .open("database.txt", ios::in);
     if (!data)
@@ -233,18 +221,15 @@ else
 
     while(!data.eof()) // initializing the data from the file to check if the product code already exists
     {
-      if (c == pcode)
-{
-    // Increase token when the entered product code matches an existing product code
-    token++;
-}
+        if (c == pcode)
+        {
+            token++;
+        }
+        data>>c>>n>>p>>d;
+    }
+    data.close();
 
-// Read the next product's details from the database
-data >> c >> n >> p >> d;
 }
-
-// Close the database file
-data.close();
 
 if (token== 1)
 goto m;
@@ -260,26 +245,14 @@ else{
 
 }
 void shopping :: edit()
-{// Create two file stream objects for reading and writing data
-fstream data, data1;
-
-// Variable to store the product key/code
-int pkey;
-
-// Used to count matching records
-int token = 0;
-
-// Variable to store the user's choice
-int c;
-
-// Variable to store the product price
-float p;
-
-// Variable to store the product discount
-float d;
-
-// Variable to store the product name
-string n;
+{
+    fstream data, data1;
+    int pkey;
+    int token = 0;
+    int c;
+    float p;
+    float d;
+    string n;
 
     cout << "\n\t\t\t Modify the record";
     cout << "\n\t\t\t Product code :";
@@ -425,6 +398,12 @@ string n;
                 {
                     cout<<"\n\n Enter product code :";
                     cin>>arrc[c];
+                    cout<<"\n\nEnter the product quantity:";
+                    cin>>arrq[c];
+                    for(int i=0; i<c;i++)
+                    {
+                        
+                    }
                 
             }
     }
