@@ -416,6 +416,10 @@ void shopping :: edit()
                 }
                 while(choice =='y');
 
+                cout<<"\n\n\t\t\t______________RECEIPT________________\n";
+                cout<<"\nProduct No\t prodcut Name\t product quantity\tprice\tAmount\tAmount with discount\n";
+
+                for(int i=0;)
                 
             }
     }
