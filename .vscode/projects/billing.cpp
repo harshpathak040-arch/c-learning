@@ -394,19 +394,19 @@ void shopping :: edit()
                 cout<<"\n                                  \n";
                 cout<<"\n__________________________________\n";
 
-    //             do
-    //             {
-    //                 cout<<"\n\n Enter product code :";
-    //                 cin>>arrc[c];
-    //                 cout<<"\n\nEnter the product quantity:";
-    //                 cin>>arrq[c];
-    //                 for(int i=0; i<c;i++)
-    //                 {
-
-    //                 }
+                do
+                {
+                    cout<<"\n\n Enter product code :";
+                    cin>>arrc[c];
+                    cout<<"\n\nEnter the product quantity:";
+                    cin>>arrq[c];
+                    for(int i=0; i<c;i++)
+                    {
+                        
+                    }
                 
-    //         }
-    // }
+            }
+    }
 
 
     
