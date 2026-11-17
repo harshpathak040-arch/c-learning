@@ -396,14 +396,26 @@ void shopping :: edit()
 
                 do
                 {
+                    m:
                     cout<<"\n\n Enter product code :";
                     cin>>arrc[c];
                     cout<<"\n\nEnter the product quantity:";
                     cin>>arrq[c];
                     for(int i=0; i<c;i++)
                     {
-                        
+                        if (arrc[c]==arrc[i])
+                        {
+                            cout<<"\n\n Duplicate  product code.Please try again!";
+                            goto m;
+                        }
                     }
+                    c++ ;
+                    cout<<"\n\n Do you want to buy another product? if yes then press y else no";
+                    cin>>choice;
+
+                }
+                while(choice =='y');
+
                 
             }
     }
