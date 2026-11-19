@@ -252,9 +252,16 @@ void shopping :: edit()
      // Variable to store the product code/key
     int token = 0;
      // Used to check whether the product is found
+    // Variable to store the user's choice
     int c;
+
+    // Variable to store the product price
     float p;
+
+    // Variable to store the product discount
     float d;
+
+    // Variable to store the product name
     string n;
 
     cout << "\n\t\t\t Modify the record";
