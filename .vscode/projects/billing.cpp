@@ -247,8 +247,11 @@ else{
 void shopping :: edit()
 {
     fstream data, data1;
+    // Create file stream objects for reading and writing data
     int pkey;
+     // Variable to store the product code/key
     int token = 0;
+     // Used to check whether the product is found
     int c;
     float p;
     float d;
