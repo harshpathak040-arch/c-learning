@@ -268,13 +268,21 @@ void shopping :: edit()
     cout << "\n\t\t\t Product code :";
     cin >> pkey;
 
-    data.open("database.txt", ios::in);
-    if (!data)
+    // Open the database file in input/read mode
+data.open("database.txt", ios::in);
+
+if (!data)
+{
+    // If the database file cannot be opened, create/open a temporary file
+    // in append and output mode
+    data1.open("database1.txt", ios::app | ios::out);
+
+    // Read product details from the database file
+    data >> pcode >> pname >> price >> dis;
+
+    // Continue reading until the end of the database file is reached
+    while (!data.eof())
     {
-        data1.open("database1.txt", ios::app| ios ::out);
-        data >>pcode>>pname>>price>>dis;
-        while(!data.eof())
-        {
             if (pkey == pcode)
             {
                 cout << "\n\t\t product of new code:";
