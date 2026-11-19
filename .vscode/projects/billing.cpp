@@ -315,7 +315,6 @@ if (!data)
 
         }
 
-
     }
 }
     void shopping::rem()
@@ -350,6 +349,7 @@ if (!data)
                 }
                 data>>pcode>>pname>>price>>dis;
 
+
             }
             data.close();
             data1.close();
@@ -361,6 +361,7 @@ if (!data)
                 cout<<"\n\n Record not found";
 
             }
+            
         }
     }
     void shopping ::list()
