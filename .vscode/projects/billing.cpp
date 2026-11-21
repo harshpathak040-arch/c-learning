@@ -284,12 +284,14 @@ if (!data)
     while (!data.eof())
     {
             if (pkey == pcode) // Check whether the entered product code matches the product code in the record
-{
+
             {
                 cout << "\n\t\t product of new code:";// Ask for the new product code
                 cin >>c;
                 cout<<"\n\t\t Name of the product:";
-                cin >>n;
+                                                        // Ask for the new product name
+                 cin >> n;                                           // Store the new product name
+
                 cout << "\n\t\t Price:";
                 cin>> p;
                 cout << "\n\t\t Discount:";
