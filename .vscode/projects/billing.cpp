@@ -283,9 +283,10 @@ if (!data)
     // Continue reading until the end of the database file is reached
     while (!data.eof())
     {
-            if (pkey == pcode)
+            if (pkey == pcode) // Check whether the entered product code matches the product code in the record
+{
             {
-                cout << "\n\t\t product of new code:";
+                cout << "\n\t\t product of new code:";// Ask for the new product code
                 cin >>c;
                 cout<<"\n\t\t Name of the product:";
                 cin >>n;
