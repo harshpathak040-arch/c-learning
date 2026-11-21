@@ -294,7 +294,8 @@ if (!data)
 
                 cout << "\n\t\t Price:";// Ask for the new product price
                 cin>> p;     // Store the new price
-                cout << "\n\t\t Discount:";
+                cout << "\n\t\t Discount:"; // Ask for the new product discount
+                                              // Store the new discount
                 cin >>d;
                 data1 <<" "<<c<<" "<<n<<" "<<p<<" "<<d<<"\n";
                 cout << "\n\n\t\t Record edited";
