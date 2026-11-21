@@ -292,8 +292,8 @@ if (!data)
                                                         // Ask for the new product name
                  cin >> n;                                           // Store the new product name
 
-                cout << "\n\t\t Price:";
-                cin>> p;
+                cout << "\n\t\t Price:";// Ask for the new product price
+                cin>> p;     // Store the new price
                 cout << "\n\t\t Discount:";
                 cin >>d;
                 data1 <<" "<<c<<" "<<n<<" "<<p<<" "<<d<<"\n";
