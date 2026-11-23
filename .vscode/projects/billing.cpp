@@ -288,12 +288,13 @@ if (!data)
             {
                 cout << "\n\t\t product of new code:";// Ask for the new product code
                 cin >>c;
-                cout<<"\n\t\t Name of the product:";
-                                                        // Ask for the new product name
-                 cin >> n;                                           // Store the new product name
-
+                cout<<"\n\t\t Name of the product:";     // Store the new product name
+                cin >> n;                                   // Ask for the new product name
+        
+                                                       
                 cout << "\n\t\t Price:";// Ask for the new product price
                 cin>> p;     // Store the new price
+
                 cout << "\n\t\t Discount:"; // Ask for the new product discount
                 cin >>d;      // Store the new discount
                
