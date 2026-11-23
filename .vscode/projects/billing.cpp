@@ -273,9 +273,8 @@ data.open("database.txt", ios::in);
 
 if (!data)
 {
-    // If the database file cannot be opened, create/open a temporary file
-    // in append and output mode
-    data1.open("database1.txt", ios::app | ios::out);
+     data1.open("database1.txt", ios::app | ios::out    // If the database file cannot be opened, create/open a temporary file
+                                                        // in append and output mode
 
     // Read product details from the database file
     data >> pcode >> pname >> price >> dis;
