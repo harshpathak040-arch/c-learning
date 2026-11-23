@@ -255,14 +255,11 @@ void shopping :: edit()
     
     int c;
 
-    // Variable to store the product price
-    float p;
+    float p;// Variable to store the product price
 
-    // Variable to store the product discount
-    float d;
+    float d;  // Variable to store the product discount
 
-    // Variable to store the product name
-    string n;
+    string n;  // Variable to store the product name
 
     cout << "\n\t\t\t Modify the record";
     cout << "\n\t\t\t Product code :";
@@ -273,8 +270,9 @@ data.open("database.txt", ios::in);
 
 if (!data)
 {
-     data1.open("database1.txt", ios::app | ios::out    // If the database file cannot be opened, create/open a temporary file
-                                                        // in append and output mode
+    // If the database file cannot be opened, create/open a temporary file
+    // in append and output mode
+    data1.open("database1.txt", ios::app | ios::out);
 
     // Read product details from the database file
     data >> pcode >> pname >> price >> dis;
@@ -288,9 +286,9 @@ if (!data)
                 cout << "\n\t\t product of new code:";// Ask for the new product code
                 cin >>c;
                 cout<<"\n\t\t Name of the product:";     // Store the new product name
-                cin >> n;                                   // Ask for the new product name
-        
-                                                       
+                cin >> n;                                          
+                                                        // Ask for the new product name
+
                 cout << "\n\t\t Price:";// Ask for the new product price
                 cin>> p;     // Store the new price
 
