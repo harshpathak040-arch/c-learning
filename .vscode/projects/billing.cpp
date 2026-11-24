@@ -274,9 +274,8 @@ if (!data)// If the database file cannot be opened, create/open a temporary file
     data1.open("database1.txt", ios::app | ios::out);
 
     // Read product details from the database file
-    data >> pcode >> pname >> price >> dis;
+    data >> pcode >> pname >> price >> dis;   // Continue reading until the end of the database file is reached
 
-    // Continue reading until the end of the database file is reached
     while (!data.eof())
     {
             if (pkey == pcode) // Check whether the entered product code matches the product code in the record
