@@ -268,10 +268,10 @@ void shopping :: edit()
     // Open the database file in input/read mode
 data.open("database.txt", ios::in);
 
-if (!data)
+if (!data)// If the database file cannot be opened, create/open a temporary file in append and output mode
 {
     // If the database file cannot be opened, create/open a temporary file
-    // in append and output mode
+
     data1.open("database1.txt", ios::app | ios::out);
 
     // Read product details from the database file
