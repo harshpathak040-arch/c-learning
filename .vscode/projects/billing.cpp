@@ -152,7 +152,7 @@ void shopping::buyer()
     int choice; // Variable to store the buyer's choice
 
     // Display the buyer menu
-    cout << "\t\t\t  Buyer \n";
+    cout << "\t\t\t  Buyer \n";// Display the buyer menu
     cout << "              \n";
 
     // Option to buy a product
