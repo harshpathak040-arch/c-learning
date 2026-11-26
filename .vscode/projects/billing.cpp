@@ -61,9 +61,9 @@ void shopping :: menu()
         cin >> password;
 
         // Check whether the entered email and password are correct
-        if (email == "harsh@email.com" && password == "Harsh@123")
+        if (email == "harsh@email.com" && password == "Harsh@123") // If login details are correct, open administrator panel
         {
-            // If login details are correct, open administrator panel
+        
             administrator();
         }
         else
