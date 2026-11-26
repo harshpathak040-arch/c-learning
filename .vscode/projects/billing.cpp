@@ -159,8 +159,8 @@ void shopping::buyer()
     cout << "\t\t\t 1) Buy product \n";  // Option to buy a product
     cout << "              \n";
 
-    // Option to return to the main menu
-    cout << "\t\t\t 2) Go back to main menu \n";
+    
+    cout << "\t\t\t 2) Go back to main menu \n";// Option to return to the main menu
     cout << "              \n";
 
     // Ask the buyer to enter their choice
