@@ -213,9 +213,10 @@ void shopping :: add() //to add any product
         data.open("database.txt", ios::app| ios::out);
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
         data.close(); //it will add the product with code , name , price and discount and it 
-        //will be saved in data base 
+                      //will be saved in data base 
     }
 else 
+
 {
     data >> c >> n >> p >> d;
 
