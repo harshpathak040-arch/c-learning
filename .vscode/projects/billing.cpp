@@ -200,7 +200,7 @@ void shopping :: add() //to add any product
     cout <<"\n\t\t\t Add new product"; // admin can add any new product 
     cout << "\n\t\t\t Product code of the product";
     cin >> pcode;
-    cout << "\n\t\t\t Name of the product";
+    cout << "\n\t\t\t Name of the product"; // name of the product 
     cin >> pname;
     cout << "\n\n\t Price of the product";
     cin >> price;
@@ -212,7 +212,8 @@ void shopping :: add() //to add any product
     {
         data.open("database.txt", ios::app| ios::out);
         data << " "<<pcode<<" "<<pname<<" "<<price<<" "<<dis<<"\n";
-        data.close();
+        data.close(); //it will add the product with code , name , price and discount and it 
+        //will be saved in data base 
     }
 else 
 {
