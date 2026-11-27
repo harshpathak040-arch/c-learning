@@ -183,7 +183,7 @@ void shopping::buyer()
             cout << "\t\t\t\t Invalid choice!";
             break;
     }
-    goto m;
+    goto m;// return back to main function 
 
 }
 
