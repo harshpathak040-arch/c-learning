@@ -187,7 +187,7 @@ void shopping::buyer()
 
 }
 
-void shopping :: add()
+void shopping :: add() //to add any product 
 {
     m:
     fstream data;
@@ -197,7 +197,7 @@ void shopping :: add()
     float d;
     string n;
 
-    cout <<"\n\t\t\t Add new product";
+    cout <<"\n\t\t\t Add new product"; // admin can add any new product 
     cout << "\n\t\t\t Product code of the product";
     cin >> pcode;
     cout << "\n\t\t\t Name of the product";
