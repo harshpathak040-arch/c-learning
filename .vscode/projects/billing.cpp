@@ -84,8 +84,7 @@ case 2:
 
         case 3:
         {
-            exit(0);
-             // Exit the program when user selects option 3
+            exit(0);  // Exit the program when user selects option 3
         }
         default:
         {
@@ -101,13 +100,13 @@ void shopping :: administrator()
     m:
     int choice;
     cout << "\n\n\n\t\t\t Administrator menu";
-    cout << "\n\t\t\t|______1) Add the product______|";
+    cout << "\n\t\t\t|______1) Add the product______|";// admin can add any product 
     cout << "\n\t\t\t|                              |";
-    cout << "\n\t\t\t|______2) Modify the product___|";
+    cout << "\n\t\t\t|______2) Modify the product___|";// can edit old products 
     cout << "\n\t\t\t|                              |";
-    cout << "\n\t\t\t|______3) Delete the product___|"; 
+    cout << "\n\t\t\t|______3) Delete the product___|"; // can delete any products 
     cout << "\n\t\t\t|                              |";
-    cout << "\n\t\t\t|______4) Go back to main menu_|";
+    cout << "\n\t\t\t|______4) Go back to main menu_|"; //back to main menu after operations 
     
     cout <<"\n\t\t\t Please enter your choice";
     cin >> choice;
